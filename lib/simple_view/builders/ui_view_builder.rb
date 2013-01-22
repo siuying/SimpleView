@@ -1,7 +1,7 @@
 module SimpleView
   module Builders
     class UIViewBuilder
-      include SimpleView::Builders::HasBackgroundColor
+      include ::SimpleView::Builders::HasBackgroundColor
 
       STRUCTS_MAP = {
         CGAffineTransform   => Proc.new {|v| NSValue.valueWithCGAffineTransform(v) },
